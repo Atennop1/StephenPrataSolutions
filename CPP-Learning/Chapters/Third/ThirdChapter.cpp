@@ -7,7 +7,7 @@ void ThirdChapter::RunFirstTask() const
     constexpr int inches_in_foot = 12;
     
     int height_in_inches;
-    std::cout << "Enter your height in inches: ";
+    std::cout << "Enter your height in inches: ___\b\b\b";
     
     std::cin >> height_in_inches;
     std::cout << "Your height is " << height_in_inches / inches_in_foot << " feet and " << height_in_inches % inches_in_foot << " inches.\n";
@@ -81,6 +81,45 @@ void ThirdChapter::RunFourthTask() const
     const long long seconds = total_seconds % seconds_in_minute;
     
     std::cout << total_seconds << " seconds = " << days << " days, " << hours << " hours, " << minutes << " minutes, " << seconds << " seconds";
+}
+
+//----------------------------------------------------------------------------------------------------
+void ThirdChapter::RunFifthTask() const
+{
+    long long world_population;
+    std::cout << "Enter the world's population: ";
+    std::cin >> world_population;
+
+    long long usa_population;
+    std::cout << "Enter the population of the US: ";
+    std::cin >> usa_population;
+
+    std::cout << "The population of the US is " << static_cast<double>(usa_population) / static_cast<double>(world_population) * 100.0<< "% of the world population";
+}
+
+//----------------------------------------------------------------------------------------------------
+void ThirdChapter::RunSixthTask() const
+{
+    float distance;
+    std::cout << "Enter distance in kms: ";
+    std::cin >> distance;
+
+    float fuel;
+    std::cout << "Enter amount of used fuel in liters: ";
+    std::cin >> fuel;
+
+    std::cout << "Amount of fuel for 100 kms in liters: " << fuel / (distance / 100) << std::endl;
+}
+
+//----------------------------------------------------------------------------------------------------
+void ThirdChapter::RunSeventhTask() const
+{
+    float fuel_for_100_kms_in_liters;
+    std::cout << "Enter amount of fuel for 100 kms in liters: ";
+    std::cin >> fuel_for_100_kms_in_liters;
+
+    const float miles_for_1_gallon = 1.0f / (fuel_for_100_kms_in_liters / 3.875f / 62.14f);
+    std::cout << "Amount of miles for gallon: " << miles_for_1_gallon << std::endl;
 }
 
 //----------------------------------------------------------------------------------------------------
