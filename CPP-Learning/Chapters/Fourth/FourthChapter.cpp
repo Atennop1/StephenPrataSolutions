@@ -84,4 +84,54 @@ void FourthChapter::RunFourthTask() const
 }
 
 //----------------------------------------------------------------------------------------------------
+struct CandyBar
+{
+    std::string name_;
+    float weight_;
+    int calories_;
+};
+
+void FourthChapter::RunFifthTask() const
+{
+    const CandyBar snack = { "Mocha Munch", 2.3f, 350 };
+    std::cout << "Name: " << snack.name_ << "\nWeight: " << snack.weight_ << "\nCalories: " << snack.calories_;
+}
+
+//----------------------------------------------------------------------------------------------------
+void FourthChapter::RunSixthTask() const
+{
+    const CandyBar snacks[3] =
+    {
+        { "Mocha Munch", 2.3f, 350 },
+        { "Snickers", 3.4f, 450 },
+        { "Mars", 2.9f, 375 },
+    };
+
+    for (const CandyBar& snack : snacks)
+        std::cout << "Name: " << snack.name_ << "\nWeight: " << snack.weight_ << "\nCalories: " << snack.calories_ << std::endl << std::endl;
+}
+
+void FourthChapter::RunSeventhTask() const
+{
+    struct PizzaInfo
+    {
+        std::string manufacturer_name_;
+        float diameter_;
+        float weight_;
+    } pizza_info;
+    
+    std::cout << "Pizza manufacturer name: ";
+    std::getline(std::cin, pizza_info.manufacturer_name_);
+
+    std::cout << "Pizza diameter: ";
+    std::cin >> pizza_info.diameter_;
+
+    std::cout << "Pizza weight: ";
+    std::cin >> pizza_info.weight_;
+
+    std::cout << "\nHere's information about your pizza:" << std::endl;
+    std::cout << "Manufacturer name: " << pizza_info.manufacturer_name_ << "\nDiameter: " << pizza_info.diameter_ << "\nWeight: " << pizza_info.weight_;
+}
+
+//----------------------------------------------------------------------------------------------------
 
