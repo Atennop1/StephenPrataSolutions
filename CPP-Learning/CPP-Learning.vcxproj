@@ -154,11 +154,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Chapters\Fourth\FourthChapter.cpp" />
     <ClCompile Include="Chapters\Second\SecondChapter.cpp" />
     <ClCompile Include="Chapters\Third\ThirdChapter.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Chapters\Fourth\FourthChapter.h" />
     <ClInclude Include="Chapters\Second\SecondChapter.h" />
     <ClInclude Include="Chapters\Third\ThirdChapter.h" />
   </ItemGroup>
