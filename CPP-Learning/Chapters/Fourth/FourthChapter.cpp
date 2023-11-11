@@ -111,6 +111,7 @@ void FourthChapter::RunSixthTask() const
         std::cout << "Name: " << snack.name_ << "\nWeight: " << snack.weight_ << "\nCalories: " << snack.calories_ << std::endl << std::endl;
 }
 
+//----------------------------------------------------------------------------------------------------
 void FourthChapter::RunSeventhTask() const
 {
     struct PizzaInfo
@@ -131,6 +132,48 @@ void FourthChapter::RunSeventhTask() const
 
     std::cout << "\nHere's information about your pizza:" << std::endl;
     std::cout << "Manufacturer name: " << pizza_info.manufacturer_name_ << "\nDiameter: " << pizza_info.diameter_ << "\nWeight: " << pizza_info.weight_;
+}
+
+//----------------------------------------------------------------------------------------------------
+void FourthChapter::RunEighthTask() const
+{
+    struct PizzaInfo
+    {
+        std::string manufacturer_name_;
+        float diameter_;
+        float weight_;
+    };
+
+    auto *pizza_info = new PizzaInfo();
+
+    std::cout << "Pizza diameter: ";
+    (std::cin >> pizza_info->diameter_).get();
+    
+    std::cout << "Pizza manufacturer name: ";
+    std::getline(std::cin, pizza_info->manufacturer_name_);
+
+    std::cout << "Pizza weight: ";
+    std::cin >> pizza_info->weight_;
+
+    std::cout << "\nHere's information about your pizza:" << std::endl;
+    std::cout << "Manufacturer name: " << pizza_info->manufacturer_name_ << "\nDiameter: " << pizza_info->diameter_ << "\nWeight: " << pizza_info->weight_;
+
+    delete pizza_info;
+}
+
+//----------------------------------------------------------------------------------------------------
+void FourthChapter::RunNinthTask() const
+{
+    auto (*snacks)[3] = new CandyBar[1][3];
+
+    (*snacks)[0] = { "Mocha Munch", 2.3f, 350 };
+    (*snacks)[1] = { "Snickers", 3.4f, 450 };
+    (*snacks)[2] = { "Mars", 2.9f, 375 };
+
+    for (const CandyBar snack : *snacks)
+        std::cout << "Name: " << snack.name_ << "\nWeight: " << snack.weight_ << "\nCalories: " << snack.calories_ << std::endl;
+
+    delete[] snacks;
 }
 
 //----------------------------------------------------------------------------------------------------
