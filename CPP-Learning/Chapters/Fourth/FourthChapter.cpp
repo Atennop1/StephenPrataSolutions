@@ -1,6 +1,8 @@
 ﻿#pragma warning(disable : 4996)
 
 #include "FourthChapter.h"
+
+#include <array>
 #include <iostream>
 #include <string>
 #include <cstring>
@@ -174,6 +176,24 @@ void FourthChapter::RunNinthTask() const
         std::cout << "Name: " << snack.name_ << "\nWeight: " << snack.weight_ << "\nCalories: " << snack.calories_ << std::endl;
 
     delete[] snacks;
+}
+
+//----------------------------------------------------------------------------------------------------
+void FourthChapter::RunTenthTask() const
+{
+    std::array<float, 3> run_results;
+
+    std::cout << "Enter first run result: ";
+    std::cin >> run_results[0];
+
+    std::cout << "Enter second run result: ";
+    std::cin >> run_results[1];
+
+    std::cout << "Enter third run result: ";
+    std::cin >> run_results[2];
+
+    std::cout << "\nRun results: " << run_results[0] << ", " << run_results[1] << " and " << run_results[2] << std::endl;
+    std::cout << "Average value: " << (run_results[0] + run_results[1] + run_results[2]) / 3;
 }
 
 //----------------------------------------------------------------------------------------------------

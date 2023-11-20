@@ -12,4 +12,5 @@ public:
     void RunSeventhTask() const;
     void RunEighthTask() const;
     void RunNinthTask() const;
+    void RunTenthTask() const;
 };
