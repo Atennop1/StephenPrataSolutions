@@ -154,17 +154,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Chapters\Fifth\FifthChapter.cpp" />
-    <ClCompile Include="Chapters\Fourth\FourthChapter.cpp" />
-    <ClCompile Include="Chapters\Second\SecondChapter.cpp" />
-    <ClCompile Include="Chapters\Third\ThirdChapter.cpp" />
+    <ClCompile Include="Chapters\5th\FifthChapter.cpp" />
+    <ClCompile Include="Chapters\4th\FourthChapter.cpp" />
+    <ClCompile Include="Chapters\2nd\SecondChapter.cpp" />
+    <ClCompile Include="Chapters\3rd\ThirdChapter.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Chapters\Fifth\FifthChapter.h" />
-    <ClInclude Include="Chapters\Fourth\FourthChapter.h" />
-    <ClInclude Include="Chapters\Second\SecondChapter.h" />
-    <ClInclude Include="Chapters\Third\ThirdChapter.h" />
+    <ClInclude Include="Chapters\5th\FifthChapter.h" />
+    <ClInclude Include="Chapters\4th\FourthChapter.h" />
+    <ClInclude Include="Chapters\2nd\SecondChapter.h" />
+    <ClInclude Include="Chapters\3rd\ThirdChapter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
