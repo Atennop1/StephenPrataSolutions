@@ -2,7 +2,6 @@
 
 #include <array>
 #include <iostream>
-#include <valarray>
 
 //----------------------------------------------------------------------------------------------------
 void FifthChapter::RunFirstTask() const
@@ -67,7 +66,7 @@ void FifthChapter::RunFourthTask() const
     float daphne_profit = 0;
 
     float cleo_current_balance = 100;
-    constexpr float clea_percents = 5.0f;
+    constexpr float cleo_percents = 5.0f;
     float cleo_profit = 0;
 
     int counter = 0;
@@ -77,7 +76,7 @@ void FifthChapter::RunFourthTask() const
         std::cout << "Year " << counter << std::endl;
         daphne_profit += daphne_initial_balance * daphne_percents / 100.0f;
 
-        const float cleo_current_profit = cleo_current_balance * clea_percents / 100.0f;
+        const float cleo_current_profit = cleo_current_balance * cleo_percents / 100.0f;
         cleo_profit += cleo_current_profit;
         cleo_current_balance += cleo_current_profit;
 
@@ -87,6 +86,54 @@ void FifthChapter::RunFourthTask() const
 
     std::cout << "It will take Cleo " << counter << " years to make more profit than Daphne" << std::endl;
     std::cout << "Then Daphne's profit will be " << daphne_profit << "$" << " and Cleo's profit will be " << cleo_profit << "$" << std::endl;
+}
+
+//----------------------------------------------------------------------------------------------------
+void FifthChapter::RunFifthTask() const
+{
+    const std::array<std::string, 12> months = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
+    std::array<int, 12> sales = { };
+
+    for (int i = 0; i < months.size(); i++)
+    {
+        std::cout << "Enter sales for " << months[i] << ": ";
+        std::cin >> sales[i];
+    }
+
+    int total_sales = 0;
+    for (const int value : sales)
+        total_sales += value;
+    
+    std::cout << std::endl << "Sales for entire year is equal to " << total_sales << " books" << std::endl;
+}
+
+//----------------------------------------------------------------------------------------------------
+void FifthChapter::RunSixthTask() const
+{
+    const std::array<std::string, 12> months = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
+    std::array<std::array<int, 12>, 3> sales_array = { };
+
+    for (int i = 0; i < sales_array.size(); i++)
+    {
+        for (int j = 0; j < months.size(); j++)
+        {
+            std::cout << "Enter sales for " << months[j] << " of year " << i + 1 << ": ";
+            std::cin >> sales_array[i][j];
+        }
+
+        int year_sales = 0;
+        for (const int value : sales_array[i])
+            year_sales += value;
+    
+        std::cout << "Sales for " << i + 1 << " year is equal to " << year_sales << " books" << std::endl << std::endl;
+    }
+
+    int total_sales = 0;
+    for (const std::array<int, 12> year_sales : sales_array)
+        for (const int value : year_sales)
+            total_sales += value;
+    
+    std::cout << "Sales for 3 years is equal to " << total_sales << " books" << std::endl;
 }
 
 //----------------------------------------------------------------------------------------------------
