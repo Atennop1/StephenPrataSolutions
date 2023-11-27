@@ -179,7 +179,7 @@ void FifthChapter::RunSeventhTask() const
 void FifthChapter::RunEighthTask() const
 {
     setlocale(LC_ALL, "ru-RU");
-    std::cout << "Вводите слов (для завершения введите слово done):" << std::endl;
+    std::cout << "Вводите слова (для завершения введите слово done):" << std::endl;
 
     int count = 0;
     char temp_word[100];
@@ -192,6 +192,46 @@ void FifthChapter::RunEighthTask() const
     }
     
     std::cout << "Вы ввели " << count << " слов.\n";
+}
+
+//----------------------------------------------------------------------------------------------------
+void FifthChapter::RunNinthTask() const
+{
+    setlocale(LC_ALL, "ru-RU");
+    std::cout << "Вводите слова (для завершения введите слово done):" << std::endl;
+
+    int count = 0;
+    std::string temp_word;
+    std::cin >> temp_word;
+    
+    while (temp_word != "done")
+    {
+        std::cin >> temp_word;
+        count++;
+    }
+    
+    std::cout << "Вы ввели " << count << " слов.\n";
+}
+
+//----------------------------------------------------------------------------------------------------
+void FifthChapter::RunTenthTask() const
+{
+    setlocale(LC_ALL, "ru-RU");
+    std::cout << "Введите количество строк: ";
+
+    int n = 0;
+    std::cin >> n;
+    
+    for (int i = 0; i < n; i++)
+    {
+        for (int m = 1; m < n - i; m++)
+            std::cout << ".";
+
+        for (int m = 0; m < i + 1; m++)
+            std::cout << "*";
+
+        std::cout << std::endl;
+    }
 }
 
 //----------------------------------------------------------------------------------------------------
