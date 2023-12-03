@@ -168,6 +168,10 @@
     <ClInclude Include="Chapters\3rd\ThirdChapter.h" />
     <ClInclude Include="Chapters\6th\SixthChapter.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Chapters\6th\8thTask.txt" />
+    <Content Include="Chapters\6th\9thTask.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

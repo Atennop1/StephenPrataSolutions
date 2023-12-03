@@ -1,6 +1,7 @@
 ﻿#include "SixthChapter.h"
 
 #include <array>
+#include <fstream>
 #include <iostream>
 #include <string>
 
@@ -192,6 +193,133 @@ void SixthChapter::RunFifthTask() const
         std::cout << "\nNext: ";
         std::cin >> count;
     }
+}
+
+//----------------------------------------------------------------------------------------------------
+struct Philanthropist
+{
+    std::string name_;
+    double donation_;
+};
+
+void SixthChapter::RunSixthTask() const
+{
+    int count = 0;
+    std::cout << "Enter the number of philanthropists: ";
+    (std::cin >> count).get();
+    
+    const auto philanthropists = new Philanthropist[count];
+    
+    for (int i = 0; i < count; i++)
+    {
+        std::cout << "\nEnter name of philanthropist number " << i + 1 << ": ";
+        std::getline(std::cin, philanthropists[i].name_);
+
+        std::cout << "Enter donation of philanthropist number " << i + 1 << ": ";
+        (std::cin >> philanthropists[i].donation_).get();
+    }
+
+    std::string grand_patrons_string;
+    std::string patrons_string;
+
+    // made 2 loops instead of 1 for educational purposes.
+    for (int i = 0; i < count; i++)
+    {
+        if (philanthropists[i].donation_ >= 10000)
+        {
+            grand_patrons_string += philanthropists[i].name_ + "\n";
+            continue;
+        }
+
+        patrons_string += philanthropists[i].name_ + "\n";
+    }
+
+    std::cout << "\nGrand Patrons: \n" << (grand_patrons_string.length() > 0 ? grand_patrons_string : "none\n"); 
+    std::cout << "\nRegular Patrons: \n" << (patrons_string.length() > 0 ? patrons_string : "none\n"); 
+
+    delete[] philanthropists;
+}
+
+//----------------------------------------------------------------------------------------------------
+void SixthChapter::RunSeventhTask() const
+{
+    int vowels_count = 0;
+    int consonants_count = 0;
+    int others_count = 0;
+
+    std::string temp_line;
+    std::cout << "Enter words (q to exit):\n";
+
+    while (std::cin >> temp_line && temp_line != "q")
+    {
+        if (!isalpha(temp_line[0]))
+        {
+            others_count++;
+            continue;
+        }
+
+        const char lower_letter = (char)tolower(temp_line[0]);
+        if (lower_letter == 'a' || lower_letter == 'e' || lower_letter == 'i' || lower_letter == 'o' || lower_letter == 'u')
+        {
+            vowels_count++;
+            continue;
+        }
+
+        consonants_count++;
+    }
+
+    std::cout << std::endl << vowels_count << " words beginning with vowels\n"; 
+    std::cout << consonants_count << " words beginning with consonants\n"; 
+    std::cout << others_count << " others\n"; 
+}
+
+//----------------------------------------------------------------------------------------------------
+void SixthChapter::RunEighthTask() const
+{
+    int character_count = 0;
+    std::ifstream file;
+    file.open("Chapters/6th/8thTask.txt");
+
+    //counts including spaces and new string
+    while (file.get() && file.good())
+        character_count++;
+
+    std::cout << "Characters count: " << character_count << std::endl;
+    file.close();
+}
+
+//----------------------------------------------------------------------------------------------------
+void SixthChapter::RunNinthTask() const
+{
+    std::ifstream input;
+    input.open("Chapters/6th/9thTask.txt");
+
+    int count = 0;
+    (input >> count).get();
+
+    std::string grand_patrons_string;
+    std::string patrons_string;
+    
+    for (int i = 0; i < count; i++)
+    {
+        std::string name;
+        std::getline(input, name);
+
+        double donation;
+        (input >> donation).get();
+
+        if (donation >= 10000)
+        {
+            grand_patrons_string += name + "\n";
+            continue;
+        }
+
+        patrons_string += name + "\n";
+    }
+
+    std::cout << "\nGrand Patrons: \n" << (grand_patrons_string.length() > 0 ? grand_patrons_string : "none\n"); 
+    std::cout << "\nRegular Patrons: \n" << (patrons_string.length() > 0 ? patrons_string : "none\n");
+    input.close();
 }
 
 //----------------------------------------------------------------------------------------------------
