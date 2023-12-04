@@ -159,6 +159,7 @@
     <ClCompile Include="Chapters\2nd\SecondChapter.cpp" />
     <ClCompile Include="Chapters\3rd\ThirdChapter.cpp" />
     <ClCompile Include="Chapters\6th\SixthChapter.cpp" />
+    <ClCompile Include="Chapters\7th\SeventhChapter.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -167,6 +168,7 @@
     <ClInclude Include="Chapters\2nd\SecondChapter.h" />
     <ClInclude Include="Chapters\3rd\ThirdChapter.h" />
     <ClInclude Include="Chapters\6th\SixthChapter.h" />
+    <ClInclude Include="Chapters\7th\SeventhChapter.h" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Chapters\6th\8thTask.txt" />
