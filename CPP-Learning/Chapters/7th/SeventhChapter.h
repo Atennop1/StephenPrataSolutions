@@ -8,4 +8,5 @@ public:
     void RunThirdTask() const;
     void RunFourthTask() const;
     void RunFifthTask() const;
+    void RunSixthTask() const;
 };
