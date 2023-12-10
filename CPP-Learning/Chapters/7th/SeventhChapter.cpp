@@ -89,6 +89,7 @@ struct Box
     float volume_;
 };
 
+// ReSharper disable once CppPassValueParameterByConstReference
 void FunctionA(Box box)
 {
     std::cout << "Box maker: " << box.maker_ << std::endl;
@@ -226,6 +227,270 @@ void SeventhChapter::RunSixthTask() const
 
     std::cout << "Bye!\n";
     delete[] array;
+}
+
+//----------------------------------------------------------------------------------------------------
+double* FillArray7(double *begin, const int limit)
+{
+    int i;
+    double temp_value;
+    
+    for (i = 0; i < limit; i++)
+    {
+        std::cout << "Enter value #" << i + 1 << ": ";
+        std::cin >> temp_value;
+
+        if (std::cin)
+        {
+            if (temp_value < 0)
+                break;
+
+            begin[i] = temp_value;
+            continue;
+        }
+
+        std::cin.clear();
+        while (std::cin.get() != '\n') { }
+        break;
+    }
+
+    return begin + i;
+}
+
+void ShowArray7(const double *begin, const double *end)
+{
+    for (const double *element = begin; element != end; element++)
+        std::cout << "Property #" << std::distance(begin, element) + 1 << ": $" << *element << std::endl;
+}
+
+void Revalue(double* begin, const double *end, double revaluation_factor)
+{
+    for (double *element = begin; element != end; element++)
+        *element *= revaluation_factor;
+}
+
+void SeventhChapter::RunSeventhTask() const
+{
+    double properties[5];
+    double *end = FillArray7(properties, 5);
+    ShowArray7(properties, end);
+    
+    if (std::distance(properties, end) > 0)
+    {
+        double factor = 0.0;
+        std::cout << "Enter revaluation factor: ";
+    
+        while (!(std::cin >> factor))
+        {
+            std::cin.clear();
+            while (std::cin.get() != '\n') { }
+            std::cout << "Bad input; input process terminated.\n";
+        }
+
+        Revalue(properties, end, factor);
+        ShowArray7(properties, end);
+    }
+    
+    std::cout << "Done.\n";
+}
+
+//----------------------------------------------------------------------------------------------------
+constexpr int kSeasons = 4;
+const char* kSeasonsNames[4] = { "Spring", "Summer", "Fall" , "Winter" };
+
+void FillA(double expenses[])
+{
+    for (int i = 0; i < kSeasons; i++)
+    {
+        std::cout << "Enter " << kSeasonsNames[i] << " expenses: ";
+        std::cin >> expenses[i];
+    }
+}
+
+void ShowA(const double expenses[])
+{
+    double total = 0.0;
+    std::cout << "EXPENSES\n";
+    
+    for (int i = 0; i < kSeasons; i++)
+    {
+        std::cout << kSeasonsNames[i] << ": $" << expenses[i] << std::endl;
+        total += expenses[i];
+    }
+
+    std::cout << "Total Expenses: $" << total << std::endl;
+}
+
+void TaskA()
+{
+    double *expenses[kSeasons];
+    FillA((double*)expenses);
+    ShowA((double*)expenses);
+}
+
+struct CustomArray
+{
+    double elements_[kSeasons];
+};
+
+void FillB(CustomArray &expenses)
+{
+    for (int i = 0; i < kSeasons; i++)
+    {
+        std::cout << "Enter " << kSeasonsNames[i] << " expenses: ";
+        std::cin >> expenses.elements_[i];
+    }
+}
+
+void ShowB(const CustomArray& expenses)
+{
+    double total = 0.0;
+    std::cout << "EXPENSES\n";
+    
+    for (int i = 0; i < kSeasons; i++)
+    {
+        std::cout << kSeasonsNames[i] << ": $" << expenses.elements_[i] << std::endl;
+        total += expenses.elements_[i];
+    }
+
+    std::cout << "Total Expenses: $" << total << std::endl;
+}
+
+void TaskB()
+{
+    CustomArray expenses = { { 0.0, 0.0, 0.0, 0.0 } };
+    
+    FillB(expenses);
+    ShowB(expenses);
+}
+
+void SeventhChapter::RunEighthTask() const
+{
+    TaskA();
+    std::cout << std::endl;
+    TaskB();
+}
+
+//----------------------------------------------------------------------------------------------------
+constexpr int kStringLength = 30;
+
+struct Student
+{
+    char full_name_[kStringLength];
+    char hobby_[kStringLength];
+    int oop_level_;
+};
+
+int GetInfo(Student students[], int n)
+{
+    int i;
+    
+    for (i = 0; i < n; i++)
+    {
+        std::cout << "Enter #" << i + 1 << " student full name: ";
+        if (!std::cin.get(students[i].full_name_, kStringLength))
+            break;
+
+        std::cout << "Enter #" << i + 1 << " student hobby: ";
+        std::cin >> students[i].hobby_;
+        
+        std::cout << "Enter #" << i + 1 << " student OOP level: ";
+        std::cin >> students[i].oop_level_;
+        std::cin.get();
+        std::cout << std::endl;
+    }
+
+    return i;
+}
+
+void Display1(const Student& student)
+{
+    std::cout << "Student full name: " << student.full_name_ << std::endl;
+    std::cout << "Student hobby: " << student.hobby_ << std::endl;
+    std::cout << "Student OOP level: " << student.oop_level_ << std::endl;
+}
+
+void Display2(const Student *student)
+{
+    std::cout << "Student full name: " << student->full_name_ << std::endl;
+    std::cout << "Student hobby: " << student->hobby_ << std::endl;
+    std::cout << "Student OOP level: " << student->oop_level_ << std::endl;
+}
+
+void Display3(Student students[], int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        std::cout << std::endl;
+        Display1(students[i]);
+    }
+}
+
+void SeventhChapter::RunNinthTask() const
+{
+    int class_size;
+    std::cout << "Enter class size: ";
+    
+    std::cin >> class_size;
+    while (std::cin.get() != '\n') { }
+
+    std::cout << std::endl;
+    const auto students = new Student[class_size];
+    const int entered = GetInfo(students, class_size);
+
+    for (int i = 0; i < entered; i++)
+    {
+        std::cout << std::endl;
+        Display1(students[i]);
+        Display2(&students[i]);
+    }
+
+    std::cout << std::endl;
+    Display3(students, entered);
+    delete[] students;
+    std::cout << std::endl << std::endl << "Done\n";
+}
+
+//----------------------------------------------------------------------------------------------------
+double Calculate(const double first, const double second, double action(double, double))
+{
+    return action(first, second);
+}
+
+double Add(const double first, const double second)
+{
+    return first + second;
+}
+
+double Subtract(const double first, const double second)
+{
+    return first - second;
+}
+
+double Multiply(const double first, const double second)
+{
+    return first * second;
+}
+
+double Divide(const double first, const double second)
+{
+    return first / second;
+}
+
+void SeventhChapter::RunTenthTask() const
+{
+    double (*actions[4])(double, double) = { Add, Subtract, Multiply, Divide };
+    double first;
+    double second;
+
+    std::cout << "Enter numbers pair: ";
+    while (std::cin >> first >> second)
+    {
+        for (int i = 0; i < 4; i++)
+            std::cout << "#" << i + 1 << " function result: " << actions[i](first, second) << std::endl;
+
+        std::cout << "\nEnter another numbers pair (q to quit): ";
+    }
 }
 
 //----------------------------------------------------------------------------------------------------
