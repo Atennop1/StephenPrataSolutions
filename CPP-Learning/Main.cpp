@@ -1,12 +1,12 @@
 ﻿#include <cstdlib>
 #include <iostream>
 
-#include "Chapters/7th/SeventhChapter.h"
+#include "Chapters/8th/EighthChapter.h"
 
 int main()
 {
-    const auto chapter = new SeventhChapter();
-    chapter->RunTenthTask();
+    const auto chapter = new EighthChapter();
+    chapter->RunFirstTask();
 
     free(chapter);
     return 0;
