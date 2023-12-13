@@ -3,5 +3,8 @@
 class EighthChapter
 {
 public:
+    struct CandyBar;
+    
     void RunFirstTask() const;
+    void RunSecondTask() const;
 };
