@@ -1,6 +1,7 @@
 ﻿#include "NinthChapter.h"
 
 #include <iostream>
+#include <string>
 
 #include "1st/Golf.h"
 
@@ -34,3 +35,38 @@ void NinthChapter::RunFirstTask() const
 
     delete[] golfers;
 }
+
+//----------------------------------------------------------------------------------------------------
+void StringCount(const std::string &string)
+{
+    static int total = 0;
+    const int length = (int)string.length();
+    int count = 0;
+    
+    for (int i = 0; i < length; i++)
+        if (string[i] != ' ')
+            count++;
+    
+    total += count;
+    std::cout << "\"" << string << "\" contains " << count << " characters\n";
+    std::cout << total << " characters in total\n";
+}
+
+void NinthChapter::RunSecondTask() const
+{
+    std::string input;
+    std::cout << "Enter a line: ";
+    std::getline(std::cin, input);
+
+    while (!input.empty())
+    {
+        StringCount(input);
+        std::cout << std::endl;
+        std::cout << "Enter next line (empty line to quit): ";
+        std::getline(std::cin, input);
+    }
+
+    std::cout << "Bye!\n";
+}
+
+//----------------------------------------------------------------------------------------------------
