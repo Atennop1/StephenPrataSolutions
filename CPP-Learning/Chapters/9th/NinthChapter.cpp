@@ -41,14 +41,9 @@ void StringCount(const std::string &string)
 {
     static int total = 0;
     const int length = (int)string.length();
-    int count = 0;
+    total += length;
     
-    for (int i = 0; i < length; i++)
-        if (string[i] != ' ')
-            count++;
-    
-    total += count;
-    std::cout << "\"" << string << "\" contains " << count << " characters\n";
+    std::cout << "\"" << string << "\" contains " << length << " characters\n";
     std::cout << total << " characters in total\n";
 }
 
@@ -67,6 +62,39 @@ void NinthChapter::RunSecondTask() const
     }
 
     std::cout << "Bye!\n";
+}
+
+//----------------------------------------------------------------------------------------------------
+constexpr int kN = 2;
+
+struct Chaff
+{
+    char dross_[20];
+    int slag_;
+};
+
+void NinthChapter::RunThirdTask() const
+{
+    char buffer[sizeof Chaff * kN];
+    const auto chaffs = new (buffer) Chaff[kN];
+
+    for (int i = 0; i < kN; i++)
+    {
+        std::cout << "Enter dross of chaff #" << i + 1 << ": ";
+        std::cin >> chaffs[i].dross_;
+        
+        std::cout << "Enter slag of chaff #" << i + 1 << ": ";
+        (std::cin >> chaffs[i].slag_).get();
+        std::cout << std::endl;
+    }
+
+    std::cout << std::endl;
+    
+    for (int i = 0; i < kN; i++)
+    {
+        std::cout << "Dross of chaff #" << i + 1 << ": " << chaffs[i].dross_ << std::endl;
+        std::cout << "Slag of chaff #" << i + 1 << ": " << chaffs[i].slag_ << std::endl << std::endl;
+    }
 }
 
 //----------------------------------------------------------------------------------------------------
