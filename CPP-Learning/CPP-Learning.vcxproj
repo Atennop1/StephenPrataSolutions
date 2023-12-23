@@ -162,6 +162,7 @@
     <ClCompile Include="Chapters\7th\SeventhChapter.cpp" />
     <ClCompile Include="Chapters\8th\EighthChapter.cpp" />
     <ClCompile Include="Chapters\9th\1st\Golf.cpp" />
+    <ClCompile Include="Chapters\9th\4th\Sales.cpp" />
     <ClCompile Include="Chapters\9th\NinthChapter.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
@@ -174,6 +175,7 @@
     <ClInclude Include="Chapters\7th\SeventhChapter.h" />
     <ClInclude Include="Chapters\8th\EighthChapter.h" />
     <ClInclude Include="Chapters\9th\1st\Golf.h" />
+    <ClInclude Include="Chapters\9th\4th\Sales.h" />
     <ClInclude Include="Chapters\9th\NinthChapter.h" />
   </ItemGroup>
   <ItemGroup>

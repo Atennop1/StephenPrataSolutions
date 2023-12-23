@@ -4,6 +4,7 @@
 #include <string>
 
 #include "1st/Golf.h"
+#include "4th/Sales.h"
 
 void NinthChapter::RunFirstTask() const
 {
@@ -95,6 +96,22 @@ void NinthChapter::RunThirdTask() const
         std::cout << "Dross of chaff #" << i + 1 << ": " << chaffs[i].dross_ << std::endl;
         std::cout << "Slag of chaff #" << i + 1 << ": " << chaffs[i].slag_ << std::endl << std::endl;
     }
+}
+
+//----------------------------------------------------------------------------------------------------
+void NinthChapter::RunFourthTask() const
+{
+    sales::Sales first;
+    sales::Sales second;
+
+    SetSales(first);
+    constexpr double array[5] = { 12.0, 14.0, 34.4 };
+    SetSales(second, array, 5);
+
+    std::cout << std::endl << std::endl;
+    ShowSales(first);
+    std::cout << std::endl;
+    ShowSales(second);
 }
 
 //----------------------------------------------------------------------------------------------------

@@ -6,7 +6,7 @@
 int main()
 {
     const auto chapter = new NinthChapter();
-    chapter->RunThirdTask();
+    chapter->RunFourthTask();
 
     free(chapter);
     return 0;
