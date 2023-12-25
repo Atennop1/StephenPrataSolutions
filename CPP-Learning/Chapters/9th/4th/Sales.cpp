@@ -4,6 +4,7 @@
 
 namespace sales
 {
+    //----------------------------------------------------------------------------------------------------
     void SetSales(Sales &sales)
     {
         double array[kQuarters];
@@ -17,6 +18,7 @@ namespace sales
         SetSales(sales, array, kQuarters);
     }
 
+    //----------------------------------------------------------------------------------------------------
     void SetSales(Sales &sales, const double array[], int n)
     {
         double min = array[0];
@@ -45,6 +47,7 @@ namespace sales
         sales.average_ = total / n;
     }
 
+    //----------------------------------------------------------------------------------------------------
     void ShowSales(const Sales &sales)
     {
         for (int i = 0; i < kQuarters; i++)
@@ -54,4 +57,6 @@ namespace sales
         std::cout << "Max sales: " << sales.max_ << std::endl;
         std::cout << "Average sales: " << sales.average_ << std::endl;
     }
+    
+    //----------------------------------------------------------------------------------------------------
 }
