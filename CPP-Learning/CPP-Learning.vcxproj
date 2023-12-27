@@ -156,6 +156,8 @@
   <ItemGroup>
     <ClCompile Include="Chapters\10th\1st\BackAccount.cpp" />
     <ClCompile Include="Chapters\10th\2nd\Person.cpp" />
+    <ClCompile Include="Chapters\10th\3rd\GolfClass.cpp" />
+    <ClCompile Include="Chapters\10th\4th\SalesClass.cpp" />
     <ClCompile Include="Chapters\10th\TenthChapter.cpp" />
     <ClCompile Include="Chapters\5th\FifthChapter.cpp" />
     <ClCompile Include="Chapters\4th\FourthChapter.cpp" />
@@ -172,6 +174,8 @@
   <ItemGroup>
     <ClInclude Include="Chapters\10th\1st\BackAccount.h" />
     <ClInclude Include="Chapters\10th\2nd\Person.h" />
+    <ClInclude Include="Chapters\10th\3rd\GolfClass.h" />
+    <ClInclude Include="Chapters\10th\4th\SalesClass.h" />
     <ClInclude Include="Chapters\10th\TenthChapter.h" />
     <ClInclude Include="Chapters\5th\FifthChapter.h" />
     <ClInclude Include="Chapters\4th\FourthChapter.h" />

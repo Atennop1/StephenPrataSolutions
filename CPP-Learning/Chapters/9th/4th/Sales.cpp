@@ -57,6 +57,5 @@ namespace sales
         std::cout << "Max sales: " << sales.max_ << std::endl;
         std::cout << "Average sales: " << sales.average_ << std::endl;
     }
-    
     //----------------------------------------------------------------------------------------------------
 }
