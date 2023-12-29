@@ -176,6 +176,7 @@
     <ClInclude Include="Chapters\10th\2nd\Person.h" />
     <ClInclude Include="Chapters\10th\3rd\GolfClass.h" />
     <ClInclude Include="Chapters\10th\4th\SalesClass.h" />
+    <ClInclude Include="Chapters\10th\5th\Stack.h" />
     <ClInclude Include="Chapters\10th\TenthChapter.h" />
     <ClInclude Include="Chapters\5th\FifthChapter.h" />
     <ClInclude Include="Chapters\4th\FourthChapter.h" />
