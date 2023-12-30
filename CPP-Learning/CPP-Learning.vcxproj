@@ -158,6 +158,9 @@
     <ClCompile Include="Chapters\10th\2nd\Person.cpp" />
     <ClCompile Include="Chapters\10th\3rd\GolfClass.cpp" />
     <ClCompile Include="Chapters\10th\4th\SalesClass.cpp" />
+    <ClCompile Include="Chapters\10th\6th\Move.cpp" />
+    <ClCompile Include="Chapters\10th\7th\Plorg.cpp" />
+    <ClCompile Include="Chapters\10th\8th\List.cpp" />
     <ClCompile Include="Chapters\10th\TenthChapter.cpp" />
     <ClCompile Include="Chapters\5th\FifthChapter.cpp" />
     <ClCompile Include="Chapters\4th\FourthChapter.cpp" />
@@ -177,6 +180,9 @@
     <ClInclude Include="Chapters\10th\3rd\GolfClass.h" />
     <ClInclude Include="Chapters\10th\4th\SalesClass.h" />
     <ClInclude Include="Chapters\10th\5th\Stack.h" />
+    <ClInclude Include="Chapters\10th\6th\Move.h" />
+    <ClInclude Include="Chapters\10th\7th\Plorg.h" />
+    <ClInclude Include="Chapters\10th\8th\List.h" />
     <ClInclude Include="Chapters\10th\TenthChapter.h" />
     <ClInclude Include="Chapters\5th\FifthChapter.h" />
     <ClInclude Include="Chapters\4th\FourthChapter.h" />

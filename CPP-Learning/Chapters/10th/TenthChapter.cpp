@@ -8,6 +8,9 @@
 #include "3rd/GolfClass.h"
 #include "4th/SalesClass.h"
 #include "5th/Stack.h"
+#include "6th/Move.h"
+#include "7th/Plorg.h"
+#include "8th/List.h"
 
 //----------------------------------------------------------------------------------------------------
 void TenthChapter::RunFirstTask() const
@@ -184,6 +187,81 @@ void TenthChapter::RunFifthTask() const
 
     EndLoop:
     std::cout << "Bye!\n";
+}
+
+//----------------------------------------------------------------------------------------------------
+void TenthChapter::RunSixthTask() const
+{
+    auto first = Move(12.7, 11.2);
+    auto second = Move(7.9, 4.8);
+
+    first.ShowMove();
+    std::cout << std::endl;
+    second.ShowMove();
+
+    std::cout << std::endl;
+    first.Add(second).ShowMove();
+    std::cout << std::endl;
+    
+    first.Reset();
+    second.Reset();
+
+    first.ShowMove();
+    std::cout << std::endl;
+    second.ShowMove();
+}
+
+//----------------------------------------------------------------------------------------------------
+void TenthChapter::RunSeventhTask() const
+{
+    auto first = Plorg();
+    auto second = Plorg("Anton");
+
+    first.ShowFields();
+    std::cout << std::endl;
+    second.ShowFields();
+
+    first.SetCI(23);
+    second.SetCI(19);
+
+    std::cout << std::endl;
+    first.ShowFields();
+    std::cout << std::endl;
+    second.ShowFields();
+}
+
+//----------------------------------------------------------------------------------------------------
+void ShowElements(Item &item)
+{
+    std::cout << "Element: " << item << std::endl;
+}
+
+void SquareElements(Item &item)
+{
+    item *= item;
+}
+
+void TenthChapter::RunEighthTask() const
+{
+    std::cout << std::boolalpha;  
+    
+    auto list = List(3);
+    std::cout << "Is list empty after creation: " << list.IsEmpty() << std::endl;
+    std::cout << "Is list full after creation: " << list.IsFull() << std::endl << std::endl;
+
+    list.Add(12);
+    list.Add(3);
+    list.Add(59);
+
+    std::cout << "Is list empty after adding elements: " << list.IsEmpty() << std::endl;
+    std::cout << "Is list full after adding elements: " << list.IsFull() << std::endl << std::endl;
+
+    list.Visit(ShowElements);
+    std::cout << std::endl;
+
+    list.Visit(SquareElements);
+    list.Visit(ShowElements);
+    std::cout << std::endl;
 }
 
 //----------------------------------------------------------------------------------------------------
