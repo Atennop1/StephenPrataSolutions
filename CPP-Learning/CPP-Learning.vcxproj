@@ -165,6 +165,7 @@
     <ClCompile Include="Chapters\11th\1st\Vector.cpp" />
     <ClCompile Include="Chapters\11th\2nd\VectorRect.cpp" />
     <ClCompile Include="Chapters\11th\4th\Time.cpp" />
+    <ClCompile Include="Chapters\11th\5th\Mass1.cpp" />
     <ClCompile Include="Chapters\11th\EleventhChapter.cpp" />
     <ClCompile Include="Chapters\5th\FifthChapter.cpp" />
     <ClCompile Include="Chapters\4th\FourthChapter.cpp" />
@@ -191,6 +192,7 @@
     <ClInclude Include="Chapters\11th\1st\Vector.h" />
     <ClInclude Include="Chapters\11th\2nd\VectorRect.h" />
     <ClInclude Include="Chapters\11th\4th\Time.h" />
+    <ClInclude Include="Chapters\11th\5th\Mass1.h" />
     <ClInclude Include="Chapters\11th\EleventhChapter.h" />
     <ClInclude Include="Chapters\5th\FifthChapter.h" />
     <ClInclude Include="Chapters\4th\FourthChapter.h" />
