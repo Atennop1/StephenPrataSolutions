@@ -169,6 +169,9 @@
     <ClCompile Include="Chapters\11th\6th\Mass2.cpp" />
     <ClCompile Include="Chapters\11th\7th\Complex.cpp" />
     <ClCompile Include="Chapters\11th\EleventhChapter.cpp" />
+    <ClCompile Include="Chapters\12th\1st\Cow.cpp" />
+    <ClCompile Include="Chapters\12th\2nd\String.cpp" />
+    <ClCompile Include="Chapters\12th\TwelfthChapter.cpp" />
     <ClCompile Include="Chapters\5th\FifthChapter.cpp" />
     <ClCompile Include="Chapters\4th\FourthChapter.cpp" />
     <ClCompile Include="Chapters\2nd\SecondChapter.cpp" />
@@ -198,6 +201,9 @@
     <ClInclude Include="Chapters\11th\6th\Mass2.h" />
     <ClInclude Include="Chapters\11th\7th\Complex.h" />
     <ClInclude Include="Chapters\11th\EleventhChapter.h" />
+    <ClInclude Include="Chapters\12th\1st\Cow.h" />
+    <ClInclude Include="Chapters\12th\2nd\String.h" />
+    <ClInclude Include="Chapters\12th\TwelfthChapter.h" />
     <ClInclude Include="Chapters\5th\FifthChapter.h" />
     <ClInclude Include="Chapters\4th\FourthChapter.h" />
     <ClInclude Include="Chapters\2nd\SecondChapter.h" />
