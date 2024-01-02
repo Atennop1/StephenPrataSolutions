@@ -2,7 +2,7 @@
 #include "EleventhChapter.h"
 
 #include <windows.h>
-#include <stdio.h>
+#include <cstdio>
 #include <psapi.h>
 #include <chrono>
 #include <fstream>
@@ -12,6 +12,8 @@
 #include "2nd/VectorRect.h"
 #include "4th/Time.h"
 #include "5th/Mass1.h"
+#include "6th/Mass2.h"
+#include "7th/Complex.h"
 
 //----------------------------------------------------------------------------------------------------
 void EleventhChapter::RunFirstTask() const
@@ -164,11 +166,12 @@ void EleventhChapter::RunThirdTask() const
         std::chrono::time_point<std::chrono::steady_clock> time2 = std::chrono::high_resolution_clock::now();
         std::chrono::duration<double, std::milli> ms_double = time2 - time1;
 
-        PROCESS_MEMORY_COUNTERS pmc;
-        GetProcessMemoryInfo(GetCurrentProcess(), &pmc, sizeof pmc);
+        PROCESS_MEMORY_COUNTERS_EX pmc;
+        GetProcessMemoryInfo(GetCurrentProcess(), (PROCESS_MEMORY_COUNTERS*)&pmc, sizeof pmc);
         
         std::cout << "Executed in " << ms_double.count() << " ms\n";
-        std::cout << "Used " << pmc.PeakWorkingSetSize / 1048576 << " MBytes of memory\n\n";
+        std::cout << "Process used " << pmc.PeakWorkingSetSize / 1048576 << " MBytes of physical memory\n";
+        std::cout << "Process used " << pmc.PrivateUsage / 1048576 << " MBytes of virtual memory\n\n";
         std::cout << "Enter target distance (q to quit): ";
     }
 
@@ -212,6 +215,79 @@ void EleventhChapter::RunFifthTask() const
 
     std::cout << "First * 1.7: " << 1.7 * first;
     std::cout << "Second * 1.3: " << second * 1.3;
+}
+
+//----------------------------------------------------------------------------------------------------
+void EleventhChapter::RunSixthTask() const
+{
+    Mass2 array[6] =
+    {
+        Mass2(12, 1.4),
+        Mass2(134.3),
+        Mass2(94.7)
+    };
+    
+    const auto eleven_stones = Mass2(11, 0.0);
+    int greater_count = 0;
+    Mass2 max = array[0];
+    Mass2 min = array[0];
+    
+    int temp_stones;
+    double temp_pounds;
+
+    for (int i = 0; i < 3; i++)
+    {
+        std::cout << "Enter count of stones in element #" << i + 4 << ": ";
+        (std::cin >> temp_stones).get();
+        
+        std::cout << "Enter count of pounds in element #" << i + 4 << ": ";
+        (std::cin >> temp_pounds).get();
+        
+        array[i + 3] = Mass2(temp_stones, temp_pounds);
+        std::cout << std::endl;
+    }
+
+    for (const auto &i : array)
+    {
+        if (max < i)
+            max = i;
+
+        if (min > i)
+            min = i;
+
+        if (i >= eleven_stones)
+            greater_count++;
+    }
+    
+    std::cout << "Max value: ";
+    max.ShowPounds();
+
+    std::cout << "Min value: ";
+    min.ShowPounds();
+
+    std::cout << "Greater count: " << greater_count << std::endl;
+}
+
+//----------------------------------------------------------------------------------------------------
+void EleventhChapter::RunSeventhTask() const
+{
+    const auto a = Complex(3.0, 4.0);
+    Complex c;
+
+    std::cout << "Enter a complex number (q to quit):\n";
+    while (std::cin >> c)
+    {
+        std::cout << "\nc is " << c << std::endl;
+        std::cout << "complex conjugate is " << ~c << std::endl;
+        std::cout << "a is " << a << std::endl;
+        std::cout << "a + c is " << a + c << std::endl;
+        std::cout << "a - c is " << a - c << std::endl;
+        std::cout << "a * c is " << a * c << std::endl;
+        std::cout << "2 * c is " << 2 * c << std::endl;
+        std::cout << "\n\nEnter a complex number (q to quit):\n";
+    }
+
+    std::cout << "Done!\n";
 }
 
 //----------------------------------------------------------------------------------------------------
