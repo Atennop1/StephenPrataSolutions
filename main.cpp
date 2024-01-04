@@ -1,7 +1,7 @@
-#include <iostream>
+#include "source/StevenPrata/Declarations.h"
 
 int main()
 {
-    std::cout << "Hello, World!" << std::endl;
+    EleventhChapter::RunThirdTask();
     return 0;
 }
