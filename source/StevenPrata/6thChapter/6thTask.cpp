@@ -5,7 +5,7 @@ namespace SixthChapter
     struct Philanthropist
     {
         std::string name_;
-        double donation_;
+        double donation_ { };
     };
 
     void RunSixthTask()

@@ -9,7 +9,7 @@ class List
     Item *m_items_;
     
 public:
-    List(int capacity = 10);
+    explicit List(int capacity = 10);
     ~List();
 
     bool IsEmpty() const;

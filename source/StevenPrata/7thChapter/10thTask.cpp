@@ -37,7 +37,7 @@ namespace SeventhChapter
         while (std::cin >> first >> second)
         {
             for (int i = 0; i < 4; i++)
-                std::cout << "#" << i + 1 << " function result: " << actions[i](first, second) << std::endl;
+                std::cout << "#" << i + 1 << " function result: " << Calculate(first, second, actions[i]) << std::endl;
 
             std::cout << "\nEnter another numbers pair (q to quit): ";
         }

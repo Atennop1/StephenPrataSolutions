@@ -7,8 +7,8 @@ namespace FourthChapter
         struct PizzaInfo
         {
             std::string manufacturer_name_;
-            float diameter_;
-            float weight_;
+            float diameter_ { };
+            float weight_ { };
         } pizza_info;
 
         std::cout << "Pizza manufacturer name: ";

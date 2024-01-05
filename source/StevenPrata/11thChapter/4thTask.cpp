@@ -1,7 +1,4 @@
 #include <iostream>
-#include <windows.h>
-#include <psapi.h>
-#include <chrono>
 #include "2ndTaskFiles/VectorRect.h"
 #include "4thTaskFiles/Time.h"
 

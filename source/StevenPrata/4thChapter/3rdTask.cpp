@@ -10,10 +10,10 @@ namespace FourthChapter
         char total_string[40];
 
         std::cout << "Enter your first name: ";
-        std::cin.getline(first_name, strlen(first_name));
+        std::cin.getline(first_name, (std::streamsize)strlen(first_name));
 
         std::cout << "Enter your last name: ";
-        std::cin.getline(last_name, strlen(last_name));
+        std::cin.getline(last_name, (std::streamsize)strlen(last_name));
 
         strcpy(total_string, last_name);
         strcat(total_string, ", ");

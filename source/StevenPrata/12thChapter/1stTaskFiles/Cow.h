@@ -3,9 +3,9 @@
 class Cow
 {
 private:
-    char m_name_[20];
-    char *m_hobby_;
-    double m_weight_;
+    char m_name_[20] { };
+    char *m_hobby_ { };
+    double m_weight_ { };
 
     void Init(const char *name, const char *hobby, double weight);
     

@@ -1,5 +1,5 @@
-#ifndef CPP_LEARNING_DECLARATIONS_MAIN_H
-#define CPP_LEARNING_DECLARATIONS_MAIN_H
+#ifndef CPP_LEARNING_DECLARATIONS_SP_H
+#define CPP_LEARNING_DECLARATIONS_SP_H
 
 #include "2ndChapter/Declarations.h"
 #include "3rdChapter/Declarations.h"

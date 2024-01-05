@@ -10,7 +10,7 @@ namespace EleventhChapter
     {
         int n;
         srand((unsigned int)time(nullptr));
-        std::chrono::time_point<std::chrono::system_clock> time1;
+        std::chrono::time_point<std::chrono::high_resolution_clock> time1;
 
         double step_direction;
         double step_magnitude;
@@ -61,7 +61,7 @@ namespace EleventhChapter
             std::cout << "Max steps count: " << max_steps << std::endl;
             std::cout << "Average steps count: " << all_steps / n << std::endl << std::endl;
 
-            std::chrono::time_point<std::chrono::system_clock> time2 = std::chrono::high_resolution_clock::now();
+            std::chrono::time_point<std::chrono::high_resolution_clock> time2 = std::chrono::high_resolution_clock::now();
             std::chrono::duration<double, std::milli> ms_double = time2 - time1;
 
             PROCESS_MEMORY_COUNTERS_EX pmc;

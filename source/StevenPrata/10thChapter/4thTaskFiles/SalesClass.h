@@ -6,7 +6,7 @@ namespace sales
     {
     private:
         static constexpr int kQuarters = 4;
-        double m_sales_[kQuarters];
+        double m_sales_[kQuarters] { };
         double m_average_;
         double m_max_;
         double m_min_;

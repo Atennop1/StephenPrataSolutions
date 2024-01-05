@@ -15,13 +15,13 @@ namespace SixthChapter
     void RunFourthTask()
     {
         BOP bop_programmers[5] =
-                {
-                        { "Wimp Macho", "Project Manager", "WAMPUS", 0 },
-                        { "Raki Rhodes", "Junior Programmer", "RAMZES", 1 },
-                        { "Celia Laiter", "Architect", "MIPS", 2 },
-                        { "Hoppy Hipman", "Analyst Trainee", "HIPPO", 1 },
-                        { "Pat Hand", "Senior Software Engineer", "LOOPY", 2 }
-                };
+        {
+            { "Wimp Macho", "Project Manager", "WAMPUS", 0 },
+            { "Raki Rhodes", "Junior Programmer", "RAMZES", 1 },
+            { "Celia Laiter", "Architect", "MIPS", 2 },
+            { "Hoppy Hipman", "Analyst Trainee", "HIPPO", 1 },
+            { "Pat Hand", "Senior Software Engineer", "LOOPY", 2 }
+        };
 
         char temp_line[kArraySize];
         std::cout << "Benevolent Order of Programmers Report\n" <<

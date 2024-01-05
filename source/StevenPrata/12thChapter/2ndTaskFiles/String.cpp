@@ -38,7 +38,6 @@ String::~String()
     delete[] m_elements_;
 }
 
-//----------------------------------------------------------------------------------------------------
 int String::CountOf(const char character) const
 {
     int count = 0;

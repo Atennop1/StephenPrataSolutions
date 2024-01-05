@@ -1,4 +1,4 @@
-#include "source/StevenPrata/Declarations.h"
+#include "StevenPrata/Declarations.h"
 
 int main()
 {

@@ -3,7 +3,7 @@ project(CPP_Learning)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(CPP_Learning main.cpp
+add_executable(CPP_Learning source/main.cpp
 
         source/StevenPrata/Declarations.h
 
@@ -61,6 +61,7 @@ add_executable(CPP_Learning main.cpp
         source/StevenPrata/6thChapter/9thTask.cpp
 
         source/StevenPrata/7thChapter/Declarations.h
+        source/StevenPrata/7thChapter/1stTask.cpp
         source/StevenPrata/7thChapter/2ndTask.cpp
         source/StevenPrata/7thChapter/3rdTask.cpp
         source/StevenPrata/7thChapter/4thTask.cpp

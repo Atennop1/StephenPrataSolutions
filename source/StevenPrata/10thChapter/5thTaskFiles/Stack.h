@@ -9,7 +9,7 @@ private:
     int m_top_index_;
     
 public:
-    Stack(const int size)
+    explicit Stack(const int size)
     {
         m_top_index_ = -1;
         m_size_ = size;
