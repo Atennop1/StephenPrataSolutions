@@ -131,4 +131,17 @@ add_executable(CPP_Learning source/main.cpp
         source/StevenPrata/12thChapter/1stTaskFiles/Cow.h
         source/StevenPrata/12thChapter/1stTaskFiles/Cow.cpp
         source/StevenPrata/12thChapter/2ndTask.cpp
-        source/StevenPrata/12thChapter/2ndTaskFiles/String.cpp)
+        source/StevenPrata/12thChapter/2ndTaskFiles/String.cpp
+
+
+        source/CodeWars/Declarations.h
+
+        source/CodeWars/5thKyu/Declarations.h
+        source/CodeWars/5thKyu/Brainfuck.cpp
+
+        source/CodeWars/6thKyu/Declarations.h
+        source/CodeWars/6thKyu/SchrodingersBoolean.cpp
+        source/CodeWars/6thKyu/TwoSum.cpp
+        source/CodeWars/6thKyu/MissingInArithmeticProgression.cpp
+        source/CodeWars/6thKyu/BitLetter.cpp
+        source/CodeWars/6thKyu/FruitMachine.cpp)
