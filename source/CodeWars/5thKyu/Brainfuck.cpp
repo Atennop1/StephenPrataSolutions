@@ -1,9 +1,9 @@
 #include <string>
 #include <stack>
 
-namespace SixthKyu
+namespace FifthKyu
 {
-    std::string brainLuck(const std::string &code, const std::string &input)
+    std::string BrainFuck(const std::string &code, const std::string &input)
     {
         std::string result;
         unsigned char memory[30000] { };

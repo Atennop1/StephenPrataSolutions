@@ -5,9 +5,9 @@
 #include <string>
 #include <array>
 
-namespace SixthKyu
+namespace FifthKyu
 {
-    std::string brainLuck(const std::string &code, const std::string &input);
+    std::string BrainFuck(const std::string &code, const std::string &input);
 }
 
 #endif
