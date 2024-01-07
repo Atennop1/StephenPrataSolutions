@@ -148,4 +148,9 @@ add_executable(CPP_Learning source/main.cpp
         source/CodeWars/6thKyu/TwoSum.cpp
         source/CodeWars/6thKyu/MissingInArithmeticProgression.cpp
         source/CodeWars/6thKyu/BitLetter.cpp
-        source/CodeWars/6thKyu/FruitMachine.cpp)
+        source/CodeWars/6thKyu/FruitMachine.cpp
+
+
+        source/LeetCode/Declarations.h
+
+        source/LeetCode/Normal/Declarations.h source/LeetCode/Normal/AddTwoNumbers.cpp)

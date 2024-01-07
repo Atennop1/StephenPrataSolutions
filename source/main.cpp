@@ -2,9 +2,15 @@
 
 #include "StevenPrata/Declarations.h"
 #include "CodeWars/Declarations.h"
+#include "LeetCode/Declarations.h"
 
 int main()
 {
-    std::cout << FourthKyu::SumOfDivided::Return({100, 100, 107, 110, 116, 118, 123, 126, 158, 204});
+    using LeetCodeNormal::AddTwoNumberSolution;
+
+    auto *first = new AddTwoNumberSolution::ListNode(2, new AddTwoNumberSolution::ListNode(4, new AddTwoNumberSolution::ListNode(3)));
+    auto *second = new AddTwoNumberSolution::ListNode(5, new AddTwoNumberSolution::ListNode(6, new AddTwoNumberSolution::ListNode(4)));
+
+    AddTwoNumberSolution::AddTwoNumbers(first, second);
     return 0;
 }
