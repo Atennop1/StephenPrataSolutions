@@ -4,7 +4,8 @@ A repository for learning C++, in which I first did assignments from Steven Prat
 
 ## Tasks structure
 The project has every task from Steven Prata's book up to and including task 2 of chapter 12, after which I stopped reading this book. In the `source/StevenPrata` folder there are folders with each chapter, and inside these folders there are files with the tasks themselves and a `Declarations.h` file so that the tasks can be included in Main. Each chapter's assignments are in their own namespace to avoid conflicts.
-<br>Also in the `source/StevenPrata` folder there is a `Declarations.h` file for quickly connecting all tasks. Thus, the launch code for task 3 of chapter 11 will look like this:
+<br>Also there is `source/StevenPrata/Declarations.h` file for quickly connecting all tasks. Thus, the launch code for task 3 of chapter 11 will look like this:
+
 ```cpp
 #include "StevenPrata/Declarations.h"
 
@@ -15,4 +16,5 @@ int main()
 }
 ```
 
-The structure of tasks with Codewars is similar, there is a folder `source/Codewars`, in which tasks are divided by kyu, from 8 to 1, each kyu has its own `Declarations.h` and its own namespace.
+The structure of tasks with Codewars is similar, there is a folder `source/Codewars`, in which tasks are divided by kyu, from 8 to 1, each kyu has its own `Declarations.h` and its own namespace, and of course there is `source/Codewars/Declarations.h` file for fast access to all tasks from main.cpp
+<br><br>Same thing with LeetCode, there is a folder `source/Leetcode`, in which tasks are divided by difficulty, from easy to hard, each difficulty has its own `Declarations.h` and its own namespace, and there is `source/Leetcode/Declarations.h` file for fast access to all tasks from main.cpp
