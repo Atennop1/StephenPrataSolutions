@@ -6,11 +6,11 @@
 
 int main()
 {
-    using LeetCodeNormal::AddTwoNumberSolution;
+    using LeetCodeNormal::AddTwoNumbersSolution;
 
-    auto *first = new AddTwoNumberSolution::ListNode(2, new AddTwoNumberSolution::ListNode(4, new AddTwoNumberSolution::ListNode(3)));
-    auto *second = new AddTwoNumberSolution::ListNode(5, new AddTwoNumberSolution::ListNode(6, new AddTwoNumberSolution::ListNode(4)));
+    auto *first = new AddTwoNumbersSolution::ListNode(2, new AddTwoNumbersSolution::ListNode(4, new AddTwoNumbersSolution::ListNode(3)));
+    auto *second = new AddTwoNumbersSolution::ListNode(5, new AddTwoNumbersSolution::ListNode(6, new AddTwoNumbersSolution::ListNode(4)));
 
-    AddTwoNumberSolution::AddTwoNumbers(first, second);
+    AddTwoNumbersSolution::AddTwoNumbers(first, second);
     return 0;
 }

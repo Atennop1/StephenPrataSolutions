@@ -153,4 +153,8 @@ add_executable(CPP_Learning source/main.cpp
 
         source/LeetCode/Declarations.h
 
-        source/LeetCode/Normal/Declarations.h source/LeetCode/Normal/AddTwoNumbers.cpp)
+        source/LeetCode/Easy/Declarations.h
+        source/LeetCode/Easy/PalindromeNumber.cpp
+
+        source/LeetCode/Normal/Declarations.h
+        source/LeetCode/Normal/AddTwoNumbers.cpp)

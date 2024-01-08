@@ -7,7 +7,7 @@
 
 namespace LeetCodeNormal
 {
-    class AddTwoNumberSolution
+    class AddTwoNumbersSolution
     {
     public:
         struct ListNode

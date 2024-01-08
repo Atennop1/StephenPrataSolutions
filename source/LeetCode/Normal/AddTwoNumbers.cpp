@@ -1,8 +1,8 @@
-#include "../Declarations.h"
+#include "Declarations.h"
 
 namespace LeetCodeNormal
 {
-    ListNode* AddTwoNumberSolution::AddTwoNumbers(ListNode *first, ListNode *second)
+    AddTwoNumbersSolution::ListNode* AddTwoNumbersSolution::AddTwoNumbers(ListNode *first, ListNode *second)
     {
         auto *result = new ListNode();
         ListNode *current_node = result;
