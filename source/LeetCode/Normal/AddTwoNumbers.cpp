@@ -2,7 +2,7 @@
 
 namespace LeetCodeNormal
 {
-    AddTwoNumbersSolution::ListNode* AddTwoNumbersSolution::AddTwoNumbers(ListNode *first, ListNode *second)
+    Solutions::ListNode* Solutions::AddTwoNumbers(ListNode *first, ListNode *second)
     {
         auto *result = new ListNode();
         ListNode *current_node = result;

@@ -3,7 +3,7 @@
 
 namespace LeetCodeEasy
 {
-    bool PalindromeNumberSolution::IsPalindrome(const int x)
+    bool Solutions::IsPalindrome(const int x)
     {
         if (x < 0)
             return false;

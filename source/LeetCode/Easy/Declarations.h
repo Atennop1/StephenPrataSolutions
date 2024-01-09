@@ -3,14 +3,15 @@
 
 #include <vector>
 #include <string>
-#include <array>
 
 namespace LeetCodeEasy
 {
-    class PalindromeNumberSolution
+    class Solutions
     {
     public:
         static bool IsPalindrome(int x);
+        static std::vector<int> TwoSum(std::vector<int> &numbers, int target);
+        static std::string longestCommonPrefix(std::vector<std::string> &strings);
     };
 }
 
