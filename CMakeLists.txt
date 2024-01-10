@@ -157,6 +157,7 @@ add_executable(CPP_Learning source/main.cpp
         source/LeetCode/Easy/PalindromeNumber.cpp
         source/LeetCode/Easy/TwoSum.cpp
         source/LeetCode/Easy/LongestCommonPrefix.cpp
+        source/LeetCode/Easy/PlusOne.cpp
 
         source/LeetCode/Normal/Declarations.h
         source/LeetCode/Normal/AddTwoNumbers.cpp)
