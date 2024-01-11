@@ -160,4 +160,4 @@ add_executable(CPP_Learning source/main.cpp
         source/LeetCode/Easy/PlusOne.cpp
 
         source/LeetCode/Normal/Declarations.h
-        source/LeetCode/Normal/AddTwoNumbers.cpp)
+        source/LeetCode/Normal/AddTwoNumbers.cpp source/CodeWars/6thKyu/CreatePhoneNumber.cpp)

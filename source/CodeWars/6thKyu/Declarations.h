@@ -11,6 +11,7 @@ namespace SixthKyu
     std::pair<std::size_t, std::size_t> TwoSum(const std::vector<int> &numbers, int target);
     std::string BitLetter(const std::vector<unsigned char> &n);
     unsigned int FruitMachine(const std::array<std::vector<std::string>, 3> &reels, const std::array<unsigned int, 3> &spins);
+    std::string CreatePhoneNumber(const int array [10]);
 }
 
 #endif
