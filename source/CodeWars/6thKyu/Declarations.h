@@ -12,6 +12,7 @@ namespace SixthKyu
     std::string BitLetter(const std::vector<unsigned char> &n);
     unsigned int FruitMachine(const std::array<std::vector<std::string>, 3> &reels, const std::array<unsigned int, 3> &spins);
     std::string CreatePhoneNumber(const int array [10]);
+    uint32_t IpToInt32(const std::string& ip);
 }
 
 #endif
