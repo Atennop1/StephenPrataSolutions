@@ -2,7 +2,7 @@
 
 namespace LeetCodeEasy
 {
-    std::string Solutions::longestCommonPrefix(std::vector<std::string> &strings)
+    std::string Solutions::LongestCommonPrefix(std::vector<std::string> &strings)
     {
         std::string result;
 

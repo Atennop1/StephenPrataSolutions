@@ -6,7 +6,6 @@
 
 int main()
 {
-    std::vector<std::string> strings = { "" };
-    LeetCodeEasy::Solutions::longestCommonPrefix(strings);
+    LeetCodeNormal::Solutions::IntToRoman(58);
     return 0;
 }

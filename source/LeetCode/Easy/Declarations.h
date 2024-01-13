@@ -11,8 +11,9 @@ namespace LeetCodeEasy
     public:
         static bool IsPalindrome(int x);
         static std::vector<int> TwoSum(std::vector<int> &numbers, int target);
-        static std::string longestCommonPrefix(std::vector<std::string> &strings);
-        static std::vector<int> plusOne(std::vector<int> &digits);
+        static std::string LongestCommonPrefix(std::vector<std::string> &strings);
+        static std::vector<int> PlusOne(std::vector<int> &digits);
+        static int RemoveElement(std::vector<int>& numbers, int removing_number);
     };
 }
 

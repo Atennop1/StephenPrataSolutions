@@ -3,7 +3,7 @@
 
 namespace FifthKyu
 {
-    std::string BrainFuck(const std::string &code, const std::string &input)
+    std::string Brainfuck(const std::string &code, const std::string &input)
     {
         std::string result;
         unsigned char memory[30000] { };

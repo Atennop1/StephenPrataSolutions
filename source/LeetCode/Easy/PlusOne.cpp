@@ -3,7 +3,7 @@
 
 namespace LeetCodeEasy
 {
-    std::vector<int> Solutions::plusOne(std::vector<int> &digits)
+    std::vector<int> Solutions::PlusOne(std::vector<int> &digits)
     {
         std::vector<int> digits_copy = std::vector<int>(digits);
         int last_index = (int)digits_copy.size() - 1;
