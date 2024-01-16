@@ -22,6 +22,8 @@ namespace LeetCodeNormal
 
         static ListNode* AddTwoNumbers(ListNode *first, ListNode *second);
         static std::string IntToRoman(int number);
+        static int Reverse(int x);
+        static int Divide(int dividend, int divisor);
     };
 }
 
