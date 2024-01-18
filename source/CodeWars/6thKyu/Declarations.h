@@ -13,6 +13,7 @@ namespace SixthKyu
     unsigned int FruitMachine(const std::array<std::vector<std::string>, 3> &reels, const std::array<unsigned int, 3> &spins);
     std::string CreatePhoneNumber(const int array [10]);
     uint32_t IpToInt32(const std::string& ip);
+    long long int LucasNumber(int n);
 }
 
 #endif
