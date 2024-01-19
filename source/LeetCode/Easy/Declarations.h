@@ -14,6 +14,7 @@ namespace LeetCodeEasy
         static std::string LongestCommonPrefix(std::vector<std::string> &strings);
         static std::vector<int> PlusOne(std::vector<int> &digits);
         static int RemoveElement(std::vector<int>& numbers, int removing_number);
+        static std::string addBinary(const std::string& first, const std::string& second);
     };
 }
 
