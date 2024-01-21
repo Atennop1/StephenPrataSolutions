@@ -14,6 +14,7 @@ namespace SixthKyu
     std::string CreatePhoneNumber(const int array [10]);
     uint32_t IpToInt32(const std::string& ip);
     long long int LucasNumber(int n);
+    int DeleteDigit(int number);
 }
 
 #endif

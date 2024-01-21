@@ -152,6 +152,7 @@ add_executable(CPP_Learning source/main.cpp
         source/CodeWars/6thKyu/CreatePhoneNumber.cpp
         source/CodeWars/6thKyu/IpToInt32.cpp
         source/CodeWars/6thKyu/LucasNumber.cpp
+        source/CodeWars/6thKyu/DeleteDigit.cpp
 
 
         source/LeetCode/Declarations.h
@@ -162,6 +163,7 @@ add_executable(CPP_Learning source/main.cpp
         source/LeetCode/Easy/LongestCommonPrefix.cpp
         source/LeetCode/Easy/PlusOne.cpp
         source/LeetCode/Easy/RemoveElement.cpp
+        source/LeetCode/Easy/AddBinary.cpp
 
         source/LeetCode/Normal/Declarations.h
         source/LeetCode/Normal/AddTwoNumbers.cpp
