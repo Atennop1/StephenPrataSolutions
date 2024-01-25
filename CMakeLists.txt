@@ -169,4 +169,4 @@ add_executable(CPP_Learning source/main.cpp
         source/LeetCode/Normal/AddTwoNumbers.cpp
         source/LeetCode/Normal/IntegerToRoman.cpp
         source/LeetCode/Normal/ReverseInteger.cpp
-        source/LeetCode/Normal/DivideTwoIntegers.cpp)
+        source/LeetCode/Normal/DivideTwoIntegers.cpp source/LeetCode/Easy/RomanToInteger.cpp)
