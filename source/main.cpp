@@ -6,6 +6,10 @@
 
 int main()
 {
-    LeetCodeNormal::Solutions::IntToRoman(58);
+    auto result = LeetCodeNormal::Solutions::LetterCombinations("23");
+
+    for (const auto &i : result)
+        std::cout << i << " ";
+
     return 0;
 }

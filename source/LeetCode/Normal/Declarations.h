@@ -24,6 +24,7 @@ namespace LeetCodeNormal
         static std::string IntToRoman(int number);
         static int Reverse(int x);
         static int Divide(int dividend, int divisor);
+        static std::vector<std::string> LetterCombinations(const std::string& digits);
     };
 }
 
