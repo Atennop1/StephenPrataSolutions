@@ -6,10 +6,7 @@
 
 int main()
 {
-    auto result = LeetCodeNormal::Solutions::LetterCombinations("23");
-
-    for (const auto &i : result)
-        std::cout << i << " ";
-
+    auto list = std::vector<int> { 4, 1, 2, 1, 2};
+    auto result = LeetCodeEasy::Solutions::SingleNumber(list);
     return 0;
 }

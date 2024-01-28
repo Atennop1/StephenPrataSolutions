@@ -164,9 +164,12 @@ add_executable(CPP_Learning source/main.cpp
         source/LeetCode/Easy/PlusOne.cpp
         source/LeetCode/Easy/RemoveElement.cpp
         source/LeetCode/Easy/AddBinary.cpp
+        source/LeetCode/Easy/RomanToInteger.cpp
+        source/LeetCode/Easy/SingleNumber.cpp
 
         source/LeetCode/Normal/Declarations.h
         source/LeetCode/Normal/AddTwoNumbers.cpp
         source/LeetCode/Normal/IntegerToRoman.cpp
         source/LeetCode/Normal/ReverseInteger.cpp
-        source/LeetCode/Normal/DivideTwoIntegers.cpp source/LeetCode/Easy/RomanToInteger.cpp source/LeetCode/Normal/LetterCombinations.cpp)
+        source/LeetCode/Normal/DivideTwoIntegers.cpp
+        source/LeetCode/Normal/LetterCombinations.cpp)

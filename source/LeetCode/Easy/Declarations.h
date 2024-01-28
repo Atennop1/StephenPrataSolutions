@@ -16,6 +16,7 @@ namespace LeetCodeEasy
         static int RemoveElement(std::vector<int>& numbers, int removing_number);
         static std::string addBinary(const std::string& first, const std::string& second);
         static int RomanToInteger(const std::string &string);
+        static int SingleNumber(const std::vector<int> &numbers);
     };
 }
 
