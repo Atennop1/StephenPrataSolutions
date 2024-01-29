@@ -17,6 +17,7 @@ namespace LeetCodeEasy
         static std::string addBinary(const std::string& first, const std::string& second);
         static int RomanToInteger(const std::string &string);
         static int SingleNumber(const std::vector<int> &numbers);
+        static uint32_t ReverseBits(uint32_t n);
     };
 }
 
