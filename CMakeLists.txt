@@ -167,6 +167,7 @@ add_executable(CPP_Learning source/main.cpp
         source/LeetCode/Easy/RomanToInteger.cpp
         source/LeetCode/Easy/SingleNumber.cpp
         source/LeetCode/Easy/ReverseBits.cpp
+        source/LeetCode/Easy/HammingWeight.cpp
 
         source/LeetCode/Normal/Declarations.h
         source/LeetCode/Normal/AddTwoNumbers.cpp

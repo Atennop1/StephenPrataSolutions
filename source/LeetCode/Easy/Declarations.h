@@ -18,6 +18,7 @@ namespace LeetCodeEasy
         static int RomanToInteger(const std::string &string);
         static int SingleNumber(const std::vector<int> &numbers);
         static uint32_t ReverseBits(uint32_t n);
+        static int HammingWeight(uint32_t number);
     };
 }
 
