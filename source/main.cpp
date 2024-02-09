@@ -6,7 +6,7 @@
 
 int main()
 {
-    auto list = std::vector<int> { 4, 1, 2, 1, 2};
-    auto result = LeetCodeEasy::Solutions::SingleNumber(list);
+    auto vector = std::vector<int> { 1, 2, 0, 1, 0, 1, 3, 0, 1, 0 };
+    auto result = FifthKyu::MoveZeroes(vector);
     return 0;
 }
