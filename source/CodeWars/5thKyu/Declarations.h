@@ -9,6 +9,7 @@ namespace FifthKyu
 {
     std::string Brainfuck(const std::string &code, const std::string &input);
     std::vector<int> MoveZeroes(const std::vector<int> &input);
+    std::string incrementString(const std::string &input);
 }
 
 #endif
