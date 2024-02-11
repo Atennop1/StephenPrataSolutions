@@ -7,12 +7,14 @@
 
 namespace FourthKyu
 {
+    static unsigned long Mystery(unsigned long n);
+    static unsigned long MysteryInversion(unsigned long n);
+    static std::string NameOfMystery();
+
     class SumOfDivided
     {
-    private:
-        static std::vector<int> FindPrimeNumbers(int n);
-
     public:
+        static uint64_t Hamber(int n);
         static std::string Return(const std::vector<int> &list);
     };
 }

@@ -176,4 +176,4 @@ add_executable(CPP_Learning source/main.cpp
         source/LeetCode/Normal/IntegerToRoman.cpp
         source/LeetCode/Normal/ReverseInteger.cpp
         source/LeetCode/Normal/DivideTwoIntegers.cpp
-        source/LeetCode/Normal/LetterCombinations.cpp)
+        source/LeetCode/Normal/LetterCombinations.cpp source/CodeWars/4thKyu/MysteryFunction.cpp)

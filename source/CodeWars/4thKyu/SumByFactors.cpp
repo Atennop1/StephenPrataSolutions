@@ -4,7 +4,7 @@
 
 namespace FourthKyu
 {
-    std::vector<int> SumOfDivided::FindPrimeNumbers(const int n)
+    std::vector<int> FindPrimeNumbers(const int n)
     {
         std::vector<bool> is_prime(n + 1, true);
         is_prime[0] = is_prime[1] = false;
