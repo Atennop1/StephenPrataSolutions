@@ -139,6 +139,7 @@ add_executable(CPP_Learning source/main.cpp
         source/CodeWars/4thKyu/Declarations.h
         source/CodeWars/4thKyu/SumByFactors.cpp
         source/CodeWars/4thKyu/HammingNumbers.cpp
+        source/CodeWars/4thKyu/MysteryFunction.cpp
 
         source/CodeWars/5thKyu/Declarations.h
         source/CodeWars/5thKyu/Brainfuck.cpp
@@ -176,4 +177,4 @@ add_executable(CPP_Learning source/main.cpp
         source/LeetCode/Normal/IntegerToRoman.cpp
         source/LeetCode/Normal/ReverseInteger.cpp
         source/LeetCode/Normal/DivideTwoIntegers.cpp
-        source/LeetCode/Normal/LetterCombinations.cpp source/CodeWars/4thKyu/MysteryFunction.cpp)
+        source/LeetCode/Normal/LetterCombinations.cpp)

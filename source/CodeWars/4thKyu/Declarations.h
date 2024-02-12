@@ -7,9 +7,9 @@
 
 namespace FourthKyu
 {
-    static unsigned long Mystery(unsigned long n);
-    static unsigned long MysteryInversion(unsigned long n);
-    static std::string NameOfMystery();
+    unsigned long Mystery(unsigned long n);
+    unsigned long MysteryInversion(unsigned long n);
+    std::string NameOfMystery();
 
     class SumOfDivided
     {

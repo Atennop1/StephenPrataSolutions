@@ -1,38 +1,20 @@
 #include <iostream>
-#include <algorithm>
-#include <valarray>
 
 #include "StevenPrata/Declarations.h"
 #include "CodeWars/Declarations.h"
 #include "LeetCode/Declarations.h"
 
-std::vector<long> T(int n)
-{
-    if (n == 1)
-        return { 0, 1 };
-
-    std::vector<long> first_half = T(n - 1);
-    std::vector<long> second_half = first_half;
-    std::reverse(second_half.begin(), second_half.end());
-
-    for (long &i : second_half)
-        i += (long)std::pow(2, n - 1);
-
-    first_half.insert(first_half.end(), second_half.begin(), second_half.end());
-    return first_half;
-}
 
 int main()
 {
-    for (int i = 1; i < 7; i++)
-    {
-        std::vector<long> result = T(i);
+    for (int i = 0; i < 64; i++)
+        std::cout << FourthKyu::Mystery(i) << " ";
 
-        for (int j: result)
-            std::cout << j << " ";
+    std::cout << std::endl;
 
-        std::cout << std::endl;
-    }
+    for (const int &i : { 0, 1, 3, 2, 6, 7, 5, 4, 12, 13, 15, 14, 10, 11, 9, 8, 24, 25, 27, 26, 30, 31, 29, 28, 20, 21, 23, 22, 18, 19, 17, 16 })
+        std::cout << FourthKyu::MysteryInversion(i) << " ";
 
+    std::cout << std::endl << "That was the " << FourthKyu::NameOfMystery() << ".";
     return 0;
 }

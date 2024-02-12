@@ -3,33 +3,64 @@
 
 namespace FourthKyu
 {
-    static unsigned long Mystery(unsigned long n)
+    unsigned long Mystery(unsigned long n)
     {
         n++;
+        int pow_of_two = 0;
+        bool is_bigger_right = true;
         unsigned long result = 0;
-        int pow = 1;
 
-        while (std::pow(2, pow) < n)
-            pow++;
+        while (std::pow(2, pow_of_two) < n)
+            pow_of_two++;
 
-        for (int i = 0; i < (pow - 1); ++i)
+        for (int i = 0; i < pow_of_two; i++)
         {
-            result += (unsigned long)std::pow(2, pow - 1);
+            auto half = (unsigned long)std::pow(2, pow_of_two - i - 1);
 
-            if ((n - std::pow(2, pow - 1)) <= std::pow(2, pow - 2))
+            if (n <= half && is_bigger_right)
+                continue;
+
+            if ((n > half && is_bigger_right) || (n <= half && !is_bigger_right))
             {
+                is_bigger_right = !is_bigger_right;
+                result += half;
+            }
 
+            if (n > half)
+                n -= half;
+        }
+
+        return result;
+    }
+
+    unsigned long MysteryInversion(unsigned long n)
+    {
+        int pow_of_two = 0;
+        bool is_bigger_right = true;
+        unsigned long result = 0;
+
+        while (std::pow(2, pow_of_two) <= n)
+            pow_of_two++;
+
+        for (int i = 0; i < pow_of_two; i++)
+        {
+            auto half = (unsigned long)std::pow(2, pow_of_two - i - 1);
+
+            if ((n >= half && is_bigger_right) || (n < half && !is_bigger_right))
+                result += half;
+
+            if (n >= half)
+            {
+                is_bigger_right = !is_bigger_right;
+                n -= half;
             }
         }
+
+        return result;
     }
 
-    static unsigned long MysteryInversion(unsigned long n)
+    std::string NameOfMystery()
     {
-
-    }
-
-    static std::string NameOfMystery()
-    {
-
+        return "Gray code";
     }
 }
