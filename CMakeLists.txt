@@ -156,6 +156,7 @@ add_executable(CPP_Learning source/main.cpp
         source/CodeWars/6thKyu/IpToInt32.cpp
         source/CodeWars/6thKyu/LucasNumber.cpp
         source/CodeWars/6thKyu/DeleteDigit.cpp
+        source/CodeWars/6thKyu/AmountOfPages.cpp
 
 
         source/LeetCode/Declarations.h
