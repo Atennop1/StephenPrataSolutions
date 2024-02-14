@@ -140,6 +140,7 @@ add_executable(CPP_Learning source/main.cpp
         source/CodeWars/4thKyu/SumByFactors.cpp
         source/CodeWars/4thKyu/HammingNumbers.cpp
         source/CodeWars/4thKyu/MysteryFunction.cpp
+        source/CodeWars/4thKyu/FormatDuration.cpp
 
         source/CodeWars/5thKyu/Declarations.h
         source/CodeWars/5thKyu/Brainfuck.cpp
