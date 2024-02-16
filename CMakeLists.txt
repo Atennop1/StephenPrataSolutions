@@ -136,6 +136,9 @@ add_executable(CPP_Learning source/main.cpp
 
         source/CodeWars/Declarations.h
 
+        source/CodeWars/3thKyu/Declarations.h
+        source/CodeWars/3thKyu/BoolFuck.cpp
+
         source/CodeWars/4thKyu/Declarations.h
         source/CodeWars/4thKyu/SumByFactors.cpp
         source/CodeWars/4thKyu/HammingNumbers.cpp
