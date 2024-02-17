@@ -927,7 +927,7 @@ _deps
 
 ##### C++
 # Prerequisites
-*.d
+*.D
 
 # Precompiled Headers
 *.gch

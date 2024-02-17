@@ -136,6 +136,9 @@ add_executable(CPP_Learning source/main.cpp
 
         source/CodeWars/Declarations.h
 
+        source/CodeWars/2ndKyu/Declarations.h
+        source/CodeWars/2ndKyu/PointerMonster.cpp
+
         source/CodeWars/3rdKyu/Declarations.h
         source/CodeWars/3rdKyu/BoolFuck.cpp
 

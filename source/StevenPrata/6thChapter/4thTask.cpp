@@ -25,7 +25,7 @@ namespace SixthChapter
 
         char temp_line[kArraySize];
         std::cout << "Benevolent Order of Programmers Report\n" <<
-                  "a. display by name      b. display by title\nc. display by bopname   d. display by preference\nq. quit\n";
+                  "a. display by name      b. display by title\nc. display by bopname   D. display by preference\nq. quit\n";
 
         std::cout << "Enter your choice: ";
         while (true)
