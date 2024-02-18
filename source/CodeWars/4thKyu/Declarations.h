@@ -18,6 +18,7 @@ namespace FourthKyu
     std::string NameOfMystery();
 
     std::string FormatDuration(int seconds);
+    std::vector<int> Snail(const std::vector<std::vector<int>> &matrix);
 }
 
 #endif

@@ -17,11 +17,13 @@ namespace SecondKyu
 
     char buf[256];
 
-    char *PointerMonster(char (**(*f)())[7])
+    char *PointerMonster()
     {
         int len;
+        char (**(*f)())[7] = D;
+
         len  = sprintf(buf, "%s", *f()[0]);
-        len += sprintf(buf + len, "%s ", *((*f)()-1)[0]+4);
+        len += sprintf(buf + len, "%s ", *(f() - 1)[0]+4);
         len += sprintf(buf + len, "%s", (*f())[0]-4);
         len += sprintf(buf + len, "%s", f()[1][2]+3);
         sprintf(buf + len, "%s", *((*f)() - 1)[0] + 4);

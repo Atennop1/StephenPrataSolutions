@@ -3,7 +3,7 @@
 
 namespace SecondKyu
 {
-    char *PointerMonster(char (**(*f)())[7]);
+    char *PointerMonster();
 }
 
 #endif
