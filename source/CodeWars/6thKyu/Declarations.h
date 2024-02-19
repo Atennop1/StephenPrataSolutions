@@ -16,6 +16,7 @@ namespace SixthKyu
     long long int LucasNumber(int n);
     int DeleteDigit(int number);
     uint32_t AmountOfPages(uint32_t summary);
+    int Mobius(long long int n);
 }
 
 #endif
