@@ -19,6 +19,7 @@ namespace FourthKyu
 
     std::string FormatDuration(int seconds);
     std::vector<int> Snail(const std::vector<std::vector<int>> &matrix);
+    std::string SumStrings(const std::string &first, const std::string &second);
 }
 
 #endif

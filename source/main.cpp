@@ -6,6 +6,6 @@
 
 int main()
 {
-    std::cout << SixthKyu::Mobius(6668);
+    std::cout << FourthKyu::SumStrings("23", "456");
     return 0;
 }
