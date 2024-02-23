@@ -167,6 +167,7 @@ add_executable(CPP_Learning source/main.cpp
         source/CodeWars/6thKyu/DeleteDigit.cpp
         source/CodeWars/6thKyu/AmountOfPages.cpp
         source/CodeWars/6thKyu/MobiusFunction.cpp
+        source/CodeWars/6thKyu/EmptyString.cpp
 
 
         source/LeetCode/Declarations.h

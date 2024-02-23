@@ -6,6 +6,6 @@
 
 int main()
 {
-    std::cout << FourthKyu::SumStrings("23", "456");
+    std::cout << SixthKyu::LastNonEmptyString("zzzzzzz");
     return 0;
 }
