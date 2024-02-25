@@ -5,8 +5,8 @@ namespace TenthChapter
 {
     struct Customer
     {
-        char full_name_[35];
-        double payment_;
+        char m_full_name_[35];
+        double m_payment_;
     };
 
     void AddCustomerToStack(Stack<Customer> &stack)
@@ -14,10 +14,10 @@ namespace TenthChapter
         Customer customer { };
 
         std::cout << "Enter customer's name: ";
-        std::cin >> customer.full_name_;
+        std::cin >> customer.m_full_name_;
 
         std::cout << "Enter customer's payment: ";
-        (std::cin >> customer.payment_).get();
+        (std::cin >> customer.m_payment_).get();
 
         stack.Push(customer);
     }
@@ -25,13 +25,13 @@ namespace TenthChapter
     void DisplayLastCustomer(const Stack<Customer> &stack)
     {
         const Customer customer = stack.Peek();
-        std::cout << "Last customer's name: " << customer.full_name_ << std::endl;
-        std::cout << "Last customer's payment: " << customer.payment_ << std::endl;
+        std::cout << "Last customer's name: " << customer.m_full_name_ << std::endl;
+        std::cout << "Last customer's payment: " << customer.m_payment_ << std::endl;
     }
 
     void RunFifthTask()
     {
-        auto stack = Stack<Customer>(10);
+        auto stack = Stack<Customer>();
         double deleted_payment = 0;
 
         int command = 0;
@@ -74,7 +74,7 @@ namespace TenthChapter
                         break;
                     }
 
-                    deleted_payment += stack.Peek().payment_;
+                    deleted_payment += stack.Peek().m_payment_;
                     stack.Pop();
 
                     std::cout << "All deleted payments: " << deleted_payment << std::endl;

@@ -3,5 +3,6 @@
 
 int main()
 {
+    TwelfthChapter::RunFourthTask();
     return 0;
 }

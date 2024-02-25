@@ -132,4 +132,7 @@ add_executable(StephenPrataSolutions
         source/12thChapter/1stTaskFiles/Cow.h
         source/12thChapter/1stTaskFiles/Cow.cpp
         source/12thChapter/2ndTask.cpp
-        source/12thChapter/2ndTaskFiles/String.cpp)
+        source/12thChapter/2ndTaskFiles/String.cpp
+        source/12thChapter/3rdTask.cpp
+        source/12thChapter/3rdTaskFiles/Stock.cpp
+        source/12thChapter/3rdTaskFiles/Stock.h source/12thChapter/4thTaskFiles/Stack.cpp source/12thChapter/4thTaskFiles/Stack.h source/12thChapter/4thTask.cpp)

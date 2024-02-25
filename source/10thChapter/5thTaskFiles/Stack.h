@@ -4,21 +4,14 @@ template <typename T>
 class Stack
 {
 private:
-    int m_size_ ;
-    T *m_items_;
+    const static int m_size_ = 10;
+    T m_items_[m_size_];
     int m_top_index_;
     
 public:
-    explicit Stack(const int size)
+    explicit Stack()
     {
         m_top_index_ = -1;
-        m_size_ = size;
-        m_items_ = new T[size];
-    }
-    
-    ~Stack()
-    {
-        delete[] m_items_;
     }
     
     bool IsFull() const
@@ -31,25 +24,27 @@ public:
         return m_top_index_ == -1; 
     }
     
-    void Push(const T &item)
+    bool Push(const T &item)
     {
         if (IsFull())
-            return;
+            return false;
 
         m_top_index_++;
         m_items_[m_top_index_] = item;
+        return true;
     }
     
     T Peek() const
     {
         return m_items_[m_top_index_];
     }
-    
-    void Pop()
+
+    bool Pop()
     {
         if (IsEmpty())
-            return;
+            return false;
     
         m_top_index_--;
+        return true;
     }
 };
