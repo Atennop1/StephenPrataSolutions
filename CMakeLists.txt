@@ -84,29 +84,39 @@ add_executable(StephenPrataSolutions
 
         source/9thChapter/Declarations.h
         source/9thChapter/1stTask.cpp
+        source/9thChapter/1stTaskFiles/Golf.h
         source/9thChapter/1stTaskFiles/Golf.cpp
         source/9thChapter/2ndTask.cpp
         source/9thChapter/3rdTask.cpp
         source/9thChapter/4thTask.cpp
+        source/9thChapter/4thTaskFiles/Sales.h
         source/9thChapter/4thTaskFiles/Sales.cpp
 
         source/10thChapter/Declarations.h
         source/10thChapter/1stTask.cpp
+        source/10thChapter/1stTaskFiles/BankAccount.h
         source/10thChapter/1stTaskFiles/BackAccount.cpp
         source/10thChapter/2ndTask.cpp
+        source/10thChapter/2ndTaskFiles/Person.h
         source/10thChapter/2ndTaskFiles/Person.cpp
         source/10thChapter/3rdTask.cpp
+        source/10thChapter/3rdTaskFiles/GolfClass.h
         source/10thChapter/3rdTaskFiles/GolfClass.cpp
         source/10thChapter/4thTask.cpp
+        source/10thChapter/4thTaskFiles/SalesClass.h
         source/10thChapter/4thTaskFiles/SalesClass.cpp
         source/10thChapter/5thTask.cpp
         source/10thChapter/5thTaskFiles/Stack.h
         source/10thChapter/6thTask.cpp
+        source/10thChapter/6thTaskFiles/Move.h
         source/10thChapter/6thTaskFiles/Move.cpp
         source/10thChapter/7thTask.cpp
+        source/10thChapter/7thTaskFiles/Plorg.h
         source/10thChapter/7thTaskFiles/Plorg.cpp
         source/10thChapter/8thTask.cpp
+        source/10thChapter/8thTaskFiles/List.h
         source/10thChapter/8thTaskFiles/List.cpp
+
 
         source/11thChapter/Declarations.h
         source/11thChapter/1stTask.cpp
@@ -117,6 +127,7 @@ add_executable(StephenPrataSolutions
         source/11thChapter/2ndTaskFiles/VectorRect.cpp
         source/11thChapter/3rdTask.cpp
         source/11thChapter/4thTask.cpp
+        source/11thChapter/4thTaskFiles/Time.h
         source/11thChapter/4thTaskFiles/Time.cpp
         source/11thChapter/5thTask.cpp
         source/11thChapter/5thTaskFiles/Mass1.h
@@ -125,6 +136,7 @@ add_executable(StephenPrataSolutions
         source/11thChapter/6thTaskFiles/Mass2.h
         source/11thChapter/6thTaskFiles/Mass2.cpp
         source/11thChapter/7thTask.cpp
+        source/11thChapter/7thTaskFiles/Complex.h
         source/11thChapter/7thTaskFiles/Complex.cpp
 
         source/12thChapter/Declarations.h
@@ -132,7 +144,11 @@ add_executable(StephenPrataSolutions
         source/12thChapter/1stTaskFiles/Cow.h
         source/12thChapter/1stTaskFiles/Cow.cpp
         source/12thChapter/2ndTask.cpp
+        source/12thChapter/2ndTaskFiles/String.h
         source/12thChapter/2ndTaskFiles/String.cpp
         source/12thChapter/3rdTask.cpp
         source/12thChapter/3rdTaskFiles/Stock.cpp
-        source/12thChapter/3rdTaskFiles/Stock.h source/12thChapter/4thTaskFiles/Stack.cpp source/12thChapter/4thTaskFiles/Stack.h source/12thChapter/4thTask.cpp)
+        source/12thChapter/3rdTaskFiles/Stock.h
+        source/12thChapter/4thTask.cpp
+        source/12thChapter/4thTaskFiles/Stack.cpp
+        source/12thChapter/4thTaskFiles/Stack.h)

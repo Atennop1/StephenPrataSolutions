@@ -1,7 +1,9 @@
-﻿#pragma once
+#ifndef STEPHENPRATASOLUTIONS_83EE1FD0641C4659A05B52FBE313BFE2
+#define STEPHENPRATASOLUTIONS_83EE1FD0641C4659A05B52FBE313BFE2
+
 #include <string>
 
-class BackAccount
+class BankAccount
 {
 private:
     std::string m_owner_name_;
@@ -14,3 +16,5 @@ public:
     void Put(float value);
     void Take(float value);
 };
+
+#endif

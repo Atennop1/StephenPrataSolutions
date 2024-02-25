@@ -1,27 +1,27 @@
-﻿#include "BackAccount.h"
+﻿#include "BankAccount.h"
 
 #include <iostream>
 
-void BackAccount::Initialize(const std::string &owner_name, const std::string &account_number, const float balance = 0)
+void BankAccount::Initialize(const std::string &owner_name, const std::string &account_number, const float balance = 0)
 {
     m_owner_name_ = owner_name;
     m_account_number_ = account_number;
     m_balance_ = balance;
 }
 
-void BackAccount::ShowInformation() const
+void BankAccount::ShowInformation() const
 {
     std::cout << "Account owner: " << m_owner_name_ << std::endl;
     std::cout << "Account number: " << m_account_number_ << std::endl;
     std::cout << "Account balance: " << m_balance_ << std::endl;
 }
 
-void BackAccount::Put(const float value)
+void BankAccount::Put(const float value)
 {
     m_balance_ += value;
 }
 
-void BackAccount::Take(const float value)
+void BankAccount::Take(const float value)
 {
     if (value > m_balance_)
     {

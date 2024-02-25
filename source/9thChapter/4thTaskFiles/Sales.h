@@ -1,4 +1,5 @@
-﻿#pragma once
+#ifndef STEPHENPRATASOLUTIONS_6DB7559306AA46A0AD15591C775B5D09
+#define STEPHENPRATASOLUTIONS_6DB7559306AA46A0AD15591C775B5D09
 
 namespace sales
 {
@@ -16,3 +17,5 @@ namespace sales
     void SetSales(Sales &sales, const double array[], int n);
     void ShowSales(const Sales &sales);
 }
+
+#endif

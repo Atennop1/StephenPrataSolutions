@@ -1,4 +1,5 @@
-﻿#pragma once
+#ifndef STEPHENPRATASOLUTIONS_60705B84D1664AF7B4684E3E797F9F54
+#define STEPHENPRATASOLUTIONS_60705B84D1664AF7B4684E3E797F9F54
 
 namespace sales
 {
@@ -10,12 +11,14 @@ namespace sales
         double m_average_;
         double m_max_;
         double m_min_;
-    
+
     public:
         SalesClass() = default;
         SalesClass(const double array[], int n);
-        
+
         void SetSales();
         void ShowSales() const;
     };
 }
+
+#endif

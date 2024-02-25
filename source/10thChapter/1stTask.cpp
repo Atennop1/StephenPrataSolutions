@@ -1,11 +1,11 @@
 #include <iostream>
-#include "1stTaskFiles/BackAccount.h"
+#include "1stTaskFiles/BankAccount.h"
 
 namespace TenthChapter
 {
     void RunFirstTask()
     {
-        auto account = BackAccount();
+        auto account = BankAccount();
         account.Initialize("Atennop", "9374638964", 100);
 
         account.ShowInformation();

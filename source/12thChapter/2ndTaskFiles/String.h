@@ -1,4 +1,6 @@
-﻿#pragma once
+#ifndef STEPHENPRATASOLUTIONS_0D983415D95145E8A35083057930CA0B
+#define STEPHENPRATASOLUTIONS_0D983415D95145E8A35083057930CA0B
+
 #include <iostream>
 
 class String
@@ -10,24 +12,24 @@ private:
     constexpr static int kCinLimit = 80;
 
     void Init(const char *string);
-    
+
 public:
     String();
     explicit String(const char *string);
     String(const String &string);
     ~String();
 
-    static int HowMany() { return  m_strings_count_; } 
+    static int HowMany() { return  m_strings_count_; }
     int Length() const { return m_length_; }
     int CountOf(char character) const;
     void ToLower();
     void ToUpper();
-    
+
     String& operator=(const String &string);
     String& operator=(const char *string);
     char& operator[](int i);
     const char& operator[](int i) const;
-    
+
     friend bool operator<(const String &first, const String &second);
     friend bool operator>(const String &first, const String &second);
     friend bool operator==(const String &first, const String &second);
@@ -37,3 +39,5 @@ public:
     friend String operator+(const char *first, const String &second);
     friend String operator+(const String &first, const char *second);
 };
+
+#endif

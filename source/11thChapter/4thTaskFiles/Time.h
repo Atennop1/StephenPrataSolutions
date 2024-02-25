@@ -1,4 +1,6 @@
-﻿#pragma once
+#ifndef STEPHENPRATASOLUTIONS_8244119E48C9404D9301E2B7409DB71A
+#define STEPHENPRATASOLUTIONS_8244119E48C9404D9301E2B7409DB71A
+
 #include <ostream>
 
 class Time
@@ -6,7 +8,7 @@ class Time
 private:
     int m_hours_;
     int m_minutes_;
-    
+
 public:
     explicit Time(int hours = 0, int minutes = 0);
 
@@ -20,3 +22,5 @@ public:
     friend Time operator*(const double multiplier, const Time &time) { return time * multiplier; }
     friend std::ostream& operator<<(std::ostream &output_stream, const Time &time);
 };
+
+#endif
